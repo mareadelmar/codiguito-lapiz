@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.main {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    grid-template-rows: 1fr 2px 1fr;
+}
+
+.code-box textarea {
+    border: 0;
+    *box-shadow: 0 0 0 1px grey;
+    background-color: #333;
+    font-family: monospace;
+    color: #f2f2f2;
+    resize: none;
+    padding: 1em;
+}
+
+.code-box textarea:focus {
+    outline: 0;
+}
+
+#results {
+    border: 0;
+}
+
+.wh-100 {
+    height: 100%;
+    width: 100%;
+}
+
+/* split js */
+
+.gutter-x {
+    grid-area: 2 / 1/ 2 /4;
+    border: solid 1px grey;
+    cursor: row-resize;
+}
+
+.gutter-y {
+    grid-area: 1 / 2/ 4 / 2;
+    border: solid 1px grey;
+    cursor: col-resize;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="text/css" rel="stylesheet" href="styles.css" />
+        <title>CodePen Bro</title>
+    </head>
+    <body>
+        <section class="main grid wh-100">
+            <div class="code-box">
+                <textarea
+                    class="wh-100"
+                    name=""
+                    id="html"
+                    placeholder="HTML"
+                ></textarea>
+            </div>
+            <div class="code-box">
+                <textarea
+                    class="wh-100"
+                    name=""
+                    id="css"
+                    placeholder="css"
+                ></textarea>
+            </div>
+            <div class="code-box">
+                <textarea
+                    class="wh-100"
+                    name=""
+                    id="js"
+                    placeholder="js"
+                ></textarea>
+            </div>
+
+            <div class="gutter-x"></div>
+            <div class="gutter-y"></div>
+            <div>
+                <iframe class="wh-100" id="results" srcdoc=""></iframe>
+            </div>
+        </section>
+        <script src="https://unpkg.com/split-grid/dist/split-grid.js"></script>
+        <script src="main.js" type="module"></script>
+    </body>
+</html>
