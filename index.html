@@ -4,35 +4,34 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script src="codemirror/lib/codemirror.js"></script>
+        <script src="codemirror/mode/javascript/javascript.js"></script>
+        <script src="codemirror/mode/xml/xml.js"></script>
+        <script src="codemirror/mode/css/css.js"></script>
+        <script src="https://unpkg.com/split-grid/dist/split-grid.js"></script>
+        <script src="codemirror/addon/edit/closetag.js"></script>
+        <script src="codemirror/addon/edit/closebrackets.js"></script>
+        <link rel="stylesheet" href="codemirror/theme/dracula.css" />
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="codemirror/lib/codemirror.css"
+        />
         <link type="text/css" rel="stylesheet" href="styles.css" />
-        <title>CodePen Bro</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&display=swap"
+            rel="stylesheet"
+        />
+        <title>codiguitoLápiz</title>
     </head>
     <body>
         <section class="main grid wh-100">
-            <div class="code-box">
-                <textarea
-                    class="wh-100"
-                    name=""
-                    id="html"
-                    placeholder="HTML"
-                ></textarea>
-            </div>
-            <div class="code-box">
-                <textarea
-                    class="wh-100"
-                    name=""
-                    id="css"
-                    placeholder="css"
-                ></textarea>
-            </div>
-            <div class="code-box">
-                <textarea
-                    class="wh-100"
-                    name=""
-                    id="js"
-                    placeholder="js"
-                ></textarea>
-            </div>
+            <div class="code-box" id="html"></div>
+            <div class="code-box" id="css"></div>
+            <div class="code-box" id="js"></div>
 
             <div class="gutter-x"></div>
             <div class="gutter-y"></div>
@@ -40,7 +39,6 @@
                 <iframe class="wh-100" id="results" srcdoc=""></iframe>
             </div>
         </section>
-        <script src="https://unpkg.com/split-grid/dist/split-grid.js"></script>
-        <script src="main.js" type="module"></script>
+        <script src="main.js" type="text/javascript"></script>
     </body>
 </html>

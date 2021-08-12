@@ -46,14 +46,6 @@ body {
     background: url(./assets/js.svg) no-repeat;
 }
 
-#html,
-#css,
-#js {
-    background-color: #333;
-    background-size: 32px;
-    background-position: 95% 95%;
-}
-
 #results {
     border: 0;
 }
@@ -75,4 +67,10 @@ body {
     grid-area: 1 / 2/ 4 / 2;
     border: solid 1px grey;
     cursor: col-resize;
+}
+
+.CodeMirror {
+    height: 100%;
+    font-size: 16px;
+    font-family: "Inconsolata", monospace;
 }
