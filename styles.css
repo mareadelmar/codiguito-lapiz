@@ -21,7 +21,7 @@ body {
     grid-template-rows: 1fr 2px 1fr;
 }
 
-.code-box textarea {
+/* .code-box textarea {
     border: 0;
     *box-shadow: 0 0 0 1px grey;
     font-family: monospace;
@@ -32,17 +32,30 @@ body {
 
 .code-box textarea:focus {
     outline: 0;
+} */
+
+.code-box {
+    position: relative;
 }
 
-#html {
+.code-box::after {
+    content: "";
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    width: 32px;
+    height: 32px;
+}
+
+#html::after {
     background: url(./assets/html.svg) no-repeat;
 }
 
-#css {
+#css::after {
     background: url(./assets/css.svg) no-repeat;
 }
 
-#js {
+#js::after {
     background: url(./assets/js.svg) no-repeat;
 }
 
